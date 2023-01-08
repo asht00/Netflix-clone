@@ -13,13 +13,11 @@ function App() {
         {!user ? (
           <LoginScreen />
         ) : (
-            <Routes>
-              <Route exact path='/' element={<HomeScreen />}>
-                
-              </Route>
-            </Routes>
+        <Routes>
+          <Route exact path='/' element={<HomeScreen />} />
+        </Routes>
         )}
-      </Router>
+      </Router>  
     </div>
   );
 }

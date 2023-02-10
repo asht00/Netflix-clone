@@ -79,7 +79,7 @@ function PlansScreen() {
     }
 
     return <div className="plansScreen">
-        <br/>
+        <br/> 
         {subscription && <p>Renewal date: {new Date(subscription?.current_period_end * 1000).toLocaleDateString()}</p>}
         {Object.entries(products).map(([productId, productData]) => {
             //Todos
